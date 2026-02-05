@@ -136,7 +136,7 @@ const config: Config = {
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/clawpay',
+              href: 'https://x.com/clawpaybot',
             },
             {
               label: 'GitHub',
