@@ -11,8 +11,8 @@ const config: Config = {
     v4: true,
   },
 
-  url: 'https://unrugged-fun.github.io',
-  baseUrl: '/clawpay-docs/',
+  url: 'https://docs.clawpay.bot',
+  baseUrl: '/',
 
   organizationName: 'unrugged-fun',
   projectName: 'clawpay-docs',

@@ -40,7 +40,7 @@ function HomepageHeader() {
 }
 
 function QuickStartSection() {
-  const curlCode = `curl -s https://clawpay.bot/skill.md | bash`;
+  const curlCode = `curl -s https://api.clawpay.bot/api/install.sh | bash`;
   
   return (
     <section className={styles.quickStart}>
