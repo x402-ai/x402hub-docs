@@ -1,0 +1,368 @@
+/**
+ * ClawPay Design System - "Homebrew Terminal" aesthetic
+ * Applied to Docusaurus docs to match clawpay.bot
+ * @see # ClawPay Design System.md
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+/* ========== Design system tokens (dark = default) ========== */
+:root {
+  --clawpay-bg: #000000;
+  --clawpay-surface: #0a0a0a;
+  --clawpay-border: #1a1a1a;
+  --clawpay-text: #28FE14;
+  --clawpay-text-dim: #1a9e0a;
+  --clawpay-accent: #38FE27;
+  --clawpay-red: #C33720;
+  --clawpay-yellow: #AFAD24;
+  --clawpay-blue: #532FE1;
+  --clawpay-cyan: #34BBC8;
+}
+
+[data-theme='light'] {
+  --clawpay-bg: #FAFAFA;
+  --clawpay-surface: #FFFFFF;
+  --clawpay-border: #E5E5E5;
+  --clawpay-text: #383A42;
+  --clawpay-text-dim: #6B7280;
+  --clawpay-accent: #50A14F;
+  --clawpay-red: #E45649;
+  --clawpay-yellow: #C18401;
+  --clawpay-blue: #4078F2;
+  --clawpay-cyan: #0184BC;
+}
+
+/* ========== Map to Docusaurus/Infima ========== */
+:root {
+  --ifm-color-primary: #38FE27;
+  --ifm-color-primary-dark: #28FE14;
+  --ifm-color-primary-darker: #1a9e0a;
+  --ifm-color-primary-darkest: #0f5c06;
+  --ifm-color-primary-light: #5afe3a;
+  --ifm-color-primary-lighter: #6afe4a;
+  --ifm-color-primary-lightest: #8afe6d;
+  --ifm-font-color-base: var(--clawpay-text);
+  --ifm-font-color-secondary: var(--clawpay-text-dim);
+  --ifm-background-color: var(--clawpay-bg);
+  --ifm-background-surface-color: var(--clawpay-surface);
+  --ifm-link-color: var(--clawpay-accent);
+  --ifm-link-hover-color: var(--clawpay-accent);
+  --ifm-navbar-background-color: var(--clawpay-surface);
+  --ifm-footer-background-color: var(--clawpay-surface);
+  --ifm-font-family-base: 'JetBrains Mono', 'SF Mono', 'Monaco', 'Consolas', monospace;
+  --ifm-font-family-monospace: 'JetBrains Mono', 'SF Mono', 'Monaco', 'Consolas', monospace;
+  --ifm-code-font-size: 95%;
+  --ifm-heading-font-weight: 700;
+  --ifm-global-radius: 8px;
+  --ifm-color-emphasis-100: #0d0d0d;
+  --ifm-color-emphasis-200: #1a1a1a;
+  --ifm-color-emphasis-300: #262626;
+  --ifm-color-emphasis-400: #333333;
+  --ifm-color-emphasis-500: #4d4d4d;
+  --ifm-color-emphasis-600: #1a9e0a;
+  --ifm-color-emphasis-700: #28FE14;
+  --ifm-color-emphasis-800: #38FE27;
+  --ifm-color-emphasis-900: #28FE14;
+  --ifm-color-emphasis-1000: #38FE27;
+  --ifm-toc-border-color: var(--clawpay-border);
+  --ifm-menu-color-background-active: var(--clawpay-border);
+  --ifm-pre-background: var(--clawpay-surface);
+  --ifm-code-background: var(--clawpay-surface);
+  --docusaurus-highlighted-code-line-bg: rgba(56, 254, 39, 0.12);
+}
+
+[data-theme='light'] {
+  --ifm-color-primary: #50A14F;
+  --ifm-color-primary-dark: #458f44;
+  --ifm-color-primary-darker: #3d7e3c;
+  --ifm-color-primary-darkest: #2d5e2c;
+  --ifm-color-primary-light: #5bac5a;
+  --ifm-color-primary-lighter: #6bb86a;
+  --ifm-color-primary-lightest: #8bce8a;
+  --ifm-color-emphasis-100: #f5f5f5;
+  --ifm-color-emphasis-200: #E5E5E5;
+  --ifm-color-emphasis-300: #d4d4d4;
+  --ifm-color-emphasis-400: #a3a3a3;
+  --ifm-color-emphasis-500: #6B7280;
+  --ifm-color-emphasis-600: #52525b;
+  --ifm-color-emphasis-700: #383A42;
+  --ifm-color-emphasis-800: #383A42;
+  --ifm-color-emphasis-900: #18181b;
+  --ifm-color-emphasis-1000: #09090b;
+  --docusaurus-highlighted-code-line-bg: rgba(80, 161, 79, 0.15);
+}
+
+/* ========== Base typography ========== */
+body {
+  font-family: var(--ifm-font-family-base);
+  background-color: var(--ifm-background-color);
+  color: var(--ifm-font-color-base);
+}
+
+/* ========== Hero (homepage) ========== */
+.hero--primary {
+  background: var(--clawpay-bg);
+  color: var(--clawpay-text);
+}
+
+.hero--primary .hero__title {
+  color: var(--clawpay-text);
+}
+
+.hero--primary .hero__subtitle {
+  color: var(--clawpay-text-dim);
+}
+
+/* ========== Navbar: terminal-style bar ========== */
+.navbar__title {
+  color: #28FE14 !important;
+}
+
+[data-theme='light'] .navbar__title {
+  color: #50A14F !important;
+}
+
+.navbar {
+  border-bottom: 1px solid var(--clawpay-border);
+  box-shadow: none;
+}
+
+.navbar__title,
+.navbar__link {
+  font-family: var(--ifm-font-family-base);
+}
+
+.navbar__link--active {
+  color: var(--clawpay-accent);
+}
+
+/* Logo area: prompt-style like main site */
+.navbar__brand {
+  font-family: var(--ifm-font-family-base);
+}
+
+/* ========== Sidebar ========== */
+.menu__link {
+  font-family: var(--ifm-font-family-base);
+}
+
+.menu__link--active {
+  color: var(--clawpay-accent);
+}
+
+.menu__link--active:not(.menu__link--sublist) {
+  border-left: 2px solid var(--clawpay-accent);
+}
+
+/* ========== Doc content ========== */
+.markdown {
+  font-family: var(--ifm-font-family-base);
+}
+
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4 {
+  font-family: var(--ifm-font-family-base);
+  font-weight: 700;
+}
+
+.markdown a {
+  color: var(--clawpay-accent);
+}
+
+.markdown a:hover {
+  color: var(--clawpay-accent);
+  opacity: 0.9;
+}
+
+/* ========== Code blocks: terminal window feel ========== */
+.prism-code {
+  background: var(--clawpay-surface) !important;
+  border: 1px solid var(--clawpay-border);
+  border-radius: var(--ifm-global-radius);
+}
+
+div[class*='codeBlockTitle'] {
+  background: var(--clawpay-border);
+  color: var(--clawpay-text-dim);
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.75rem;
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--clawpay-border);
+}
+
+/* ========== Buttons ========== */
+.button--primary {
+  background: var(--clawpay-accent);
+  color: #000;
+  border: none;
+}
+
+.button--primary:hover {
+  background: var(--clawpay-accent);
+  color: #000;
+  opacity: 0.9;
+}
+
+.button--secondary {
+  border-color: var(--clawpay-border);
+  color: var(--clawpay-text);
+}
+
+.button--secondary:hover {
+  border-color: var(--clawpay-accent);
+  color: var(--clawpay-accent);
+}
+
+/* ========== Footer ========== */
+.footer {
+  border-top: 1px solid var(--clawpay-border);
+  background-color: var(--clawpay-surface);
+  color: var(--clawpay-text-dim);
+}
+
+[data-theme='light'] .footer {
+  color: #374151;
+}
+
+[data-theme='light'] .footer__link-item {
+  color: #4b5563;
+}
+
+[data-theme='light'] .footer__link-item:hover {
+  color: #111827;
+}
+
+[data-theme='light'] .footer__title {
+  color: #111827;
+}
+
+[data-theme='light'] .footer .footer__bottom .footer__copyright {
+  color: #4b5563;
+}
+
+.footer__link-item:hover {
+  color: var(--clawpay-text);
+}
+
+.footer__title {
+  color: var(--clawpay-text);
+}
+
+/* ========== Terminal window component classes (for docs/homepage) ========== */
+.terminal-window {
+  background-color: var(--clawpay-surface);
+  border: 1px solid var(--clawpay-border);
+  border-radius: var(--ifm-global-radius);
+  overflow: hidden;
+}
+
+.terminal-header {
+  background-color: var(--clawpay-border);
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.terminal-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.terminal-body {
+  padding: 16px;
+}
+
+/* ========== Cursor blink (optional utility) ========== */
+.cursor {
+  display: inline-block;
+  width: 0.6em;
+  height: 1.2em;
+  background-color: var(--clawpay-text);
+  animation: clawpay-blink 1s step-end infinite;
+  vertical-align: text-bottom;
+}
+
+@keyframes clawpay-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* ========== Scrollbar ========== */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--clawpay-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--clawpay-border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--clawpay-text-dim);
+}
+
+/* ========== Table of contents ========== */
+.table-of-contents__link {
+  font-family: var(--ifm-font-family-base);
+}
+
+.table-of-contents__link--active {
+  color: var(--clawpay-accent);
+}
+
+/* ========== Breadcrumbs ========== */
+.breadcrumbs__link {
+  color: var(--clawpay-text-dim);
+}
+
+.breadcrumbs__link:hover {
+  color: var(--clawpay-accent);
+}
+
+/* ========== Admonitions (notes, tips, etc.) ========== */
+.alert {
+  border-radius: var(--ifm-global-radius);
+  border: 1px solid var(--clawpay-border);
+}
+
+.alert--info {
+  --ifm-alert-background-color: var(--clawpay-surface);
+  --ifm-alert-border-color: var(--clawpay-blue);
+}
+
+.alert--warning {
+  --ifm-alert-background-color: var(--clawpay-surface);
+  --ifm-alert-border-color: var(--clawpay-yellow);
+}
+
+.alert--danger {
+  --ifm-alert-background-color: var(--clawpay-surface);
+  --ifm-alert-border-color: var(--clawpay-red);
+}
+
+.alert--success {
+  --ifm-alert-background-color: var(--clawpay-surface);
+  --ifm-alert-border-color: var(--clawpay-accent);
+}
+
+/* ========== Pagination ========== */
+.pagination-nav__link {
+  border-color: var(--clawpay-border);
+}
+
+.pagination-nav__link:hover {
+  border-color: var(--clawpay-accent);
+}
+
+/* ========== Color mode ========== */
+/* (navbar logo replaced by ">_" title, styled above) */
