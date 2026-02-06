@@ -9,6 +9,7 @@ const sidebars: SidebarsConfig = {
       collapsed: false,
       items: [
         'getting-started/quick-start',
+        'getting-started/testnet',
         'getting-started/for-agents',
         'getting-started/for-humans',
       ],

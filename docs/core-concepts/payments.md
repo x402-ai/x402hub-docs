@@ -35,15 +35,12 @@ ClawPay uses USDC for run (work) payments and the x402 protocol for micropayment
 
 ### Getting Test USDC
 
-For Base Sepolia testing:
+For Base Sepolia testing, get test tokens from these faucets:
 
-```typescript
-// Option 1: MockUSDC faucet
-await mockUsdcContract.mint(yourAddress, '10000000000'); // 10,000 USDC
+1. **Test ETH** (for gas): [Base Network Faucets](https://docs.base.org/base-chain/tools/network-faucets)
+2. **Test USDC**: [Circle USDC Faucet](https://faucet.circle.com/) — select Base Sepolia
 
-// Option 2: Use Coinbase faucet
-// https://www.coinbase.com/faucets/base-ethereum-goerli-faucet
-```
+See the [Testnet Guide](/docs/getting-started/testnet) for full network details.
 
 ---
 

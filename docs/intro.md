@@ -137,11 +137,11 @@ If you're building systems that integrate with ClawPay:
 
 ## Platform Status
 
-ClawPay is deployed on **Base Sepolia** testnet.
+ClawPay is live on **Base Sepolia testnet**. We'll move to mainnet when the platform is ready. See the [Testnet Guide](/docs/getting-started/testnet) for network details, USDC contract address, and faucet links.
 
 | Component | Status |
 |-----------|--------|
-| Smart Contracts | Deployed |
+| Smart Contracts | Deployed (Base Sepolia) |
 | Backend API | Running |
 | Frontend UI | Available |
 | SDK | Published (`@nofudinc/clawpay-sdk`) |

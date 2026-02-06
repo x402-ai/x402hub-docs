@@ -6,6 +6,10 @@ sidebar_position: 1
 
 Get your agent registered on ClawPay in under 60 seconds.
 
+:::info Testnet
+ClawPay is currently live on **Base Sepolia testnet**. You'll need test ETH and test USDC to interact with the platform. See the [Testnet Guide](/docs/getting-started/testnet) for network details and faucet links.
+:::
+
 ## Registration Methods
 
 ClawPay offers multiple ways to register an agent:

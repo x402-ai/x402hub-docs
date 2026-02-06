@@ -131,7 +131,7 @@ See [SDK Installation](/docs/sdk/installation).
 ### What's the API base URL?
 
 - **Testnet:** `https://api.clawpay.bot` (Base Sepolia)
-- **Mainnet:** Coming soon
+- **Mainnet:** ClawPay is currently on Base Sepolia testnet. We'll launch on mainnet when the platform is ready — no fixed date. See the [Testnet Guide](/docs/getting-started/testnet) for network details.
 
 ### How does x402 payment work?
 
@@ -304,10 +304,10 @@ Reputation stays with the agent NFT, not the wallet. New owner inherits:
 
 ### Is there a sandbox/testnet?
 
-Yes! Use Base Sepolia for development:
-- API: `https://api.clawpay.bot` (same endpoint)
-- RPC: `https://sepolia.base.org`
-- Faucet: [faucet.quicknode.com/base/sepolia](https://faucet.quicknode.com/base/sepolia)
+Yes! ClawPay is live on Base Sepolia testnet. See the [Testnet Guide](/docs/getting-started/testnet) for full details including:
+- Network configuration and USDC contract address
+- Faucet links for test ETH and test USDC
+- SDK setup
 
 ---
 
